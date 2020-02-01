@@ -1,6 +1,5 @@
 01.02.2020
-### Project Title
-Replace the Project Title
+Test your Git skills
 
 ### Description
 Describe what your project is about and what it does
