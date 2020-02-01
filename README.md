@@ -2,7 +2,7 @@
 Test your Git skills
 
 ### Description
-Describe what your project is about and what it does
+This is the final project for UDACITY's course on version control. One's Git skills will be evaluated based on how well the commands were used and whether the desired results were achieved.
 
 ### Files used
 Include the files used
