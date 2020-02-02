@@ -67,7 +67,7 @@ def get_filters():
     while True:
         print("Please specify in which of the following cities you're interested. It's case insensitive.\nChicago, New York City, Washington")
         print(Fore.GREEN+"City of...")
-        city = input(Fore.BLUE).strip().title()
+        city = input(Fore.YELLOW).strip().title()
         print(Style.RESET_ALL)
         if city in city_reference_list:
             break
@@ -79,7 +79,7 @@ def get_filters():
     while not valid_entry:
             print("\nPlease specify the month(s) your interested in.\nType all for no filter\nOr\nJanuary, February, March, ... , December")
             print(Fore.GREEN+"It's case insensitive and you can filter by more than one month. Separate entries with a ','")
-            month = input(Fore.BLUE).strip().replace(" ","").title().split(',')
+            month = input(Fore.YELLOW).strip().replace(" ","").title().split(',')
             print(Style.RESET_ALL)
             month_number = []
             for m in month:
@@ -95,7 +95,7 @@ def get_filters():
     while not valid_entry:
             print("\nPlease specify the day(s) your interested in.\nType all for no filter\nOr\nM:Monday, T:Tuesday, W:Wednesday, Th:Thursday, F:Friday, Sa:Saturday, Su:Sunday")
             print(Fore.GREEN+"It's case insensitive and you can filter by more than one day.Separate entries with a ','")
-            day = input(Fore.BLUE).strip().replace(" ","").lower().split(',')
+            day = input(Fore.YELLOW).strip().replace(" ","").lower().split(',')
             print(Style.RESET_ALL)
             valid_entry = entry_validation(day,day_reference_list)
 
@@ -143,7 +143,7 @@ def load_data(city, month, day):
                 if len(month) == 1:
                     while True:
                         print(Fore.GREEN)
-                        print("Filter will be considered 'All'. Do you want to continue or restar?c:Continue, r:Restart\n",Fore.BLUE)
+                        print("Filter will be considered 'All'. Do you want to continue or restar?c:Continue, r:Restart\n",Fore.YELLOW)
                         cont_or_res = input()
                         print(Style.RESET_ALL)
                         if cont_or_res == 'c':
@@ -175,7 +175,7 @@ def load_data(city, month, day):
                 if i == len(day)-1:
                     while True:
                         print(Fore.GREEN)
-                        print("Filter will be considered 'All'. Do you want to continue or restar?c:Continue, r:Restart\n",Fore.BLUE)
+                        print("Filter will be considered 'All'. Do you want to continue or restar?c:Continue, r:Restart\n",Fore.YELLOW)
                         cont_or_res = input()
                         print(Style.RESET_ALL)
                         if cont_or_res == 'c':
